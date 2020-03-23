@@ -1,0 +1,175 @@
+
+
+------------------Inserts Eleccion------------------  
+
+INSERT INTO `Eleccion` (`ID_Eleccion`,`F_inicio`,`F_Fin`,`Tipo_Eleccion`) VALUES (1,"03/06/2016","09/17/2020","Estatal");
+INSERT INTO `Eleccion` (`ID_Eleccion`,`F_inicio`,`F_Fin`,`Tipo_Eleccion`) VALUES (2,"09/02/2016","01/24/2021","Federal");
+INSERT INTO `Eleccion` (`ID_Eleccion`,`F_inicio`,`F_Fin`,`Tipo_Eleccion`) VALUES (3,"07/10/2016","11/09/2020","Estatal");
+INSERT INTO `Eleccion` (`ID_Eleccion`,`F_inicio`,`F_Fin`,`Tipo_Eleccion`) VALUES (4,"07/10/2016","10/20/2020","Federal");
+INSERT INTO `Eleccion` (`ID_Eleccion`,`F_inicio`,`F_Fin`,`Tipo_Eleccion`) VALUES (5,"06/17/2016","11/06/2020","Estatal");
+
+
+------------------Inserts Colegio------------------  
+
+INSERT INTO `Colegio` (`ID_Colegio`,`Numero_Votantes`,`ID_Eleccion`) VALUES (8,56379667,4);
+INSERT INTO `Colegio` (`ID_Colegio`,`Numero_Votantes`,`ID_Eleccion`) VALUES (6,108259195,5);
+INSERT INTO `Colegio` (`ID_Colegio`,`Numero_Votantes`,`ID_Eleccion`) VALUES (6,76465293,3);
+INSERT INTO `Colegio` (`ID_Colegio`,`Numero_Votantes`,`ID_Eleccion`) VALUES (9,15510622,5);
+INSERT INTO `Colegio` (`ID_Colegio`,`Numero_Votantes`,`ID_Eleccion`) VALUES (7,46123855,1);
+
+
+
+------------------Inserts Partido------------------  
+
+INSERT INTO `Partido` (`Nombre_Partido`) VALUES (" Partido Revolucionario Institucional");
+INSERT INTO `Partido` (`Nombre_Partido`) VALUES ("Partido de la Revolución Democrática");
+INSERT INTO `Partido` (`Nombre_Partido`) VALUES ("Partido Acción Nacional");
+INSERT INTO `Partido` (`Nombre_Partido`) VALUES ("Partido del Trabajo");
+INSERT INTO `Partido` (`Nombre_Partido`) VALUES ("Partido Verde Ecologista de México");
+
+
+------------------Inserts Mesa------------------  
+
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (1,"Son","6185 Gravida Street");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (2,"Gto","Ap #976-3375 Curabitur St.");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (3,"Jal","Ap #723-9460 Fermentum Street");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (4,"N.L","Ap #952-918 Scelerisque St.");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (5,"Jali","922-4715 Elit Road");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (6,"Tab","P.O. Box 126, 3117 Cras Road");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (7,"Oax","P.O. Box 865, 1063 Ipsum St.");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (8,"S.L","788-3710 Fusce St.");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (9,"Gto","P.O. Box 189, 7153 Fringilla. Avenue");
+INSERT INTO `Mesa` (`ID_Mesa`,`Nombre`,`Direccion`) VALUES (10,"B.C","Ap #379-1538 Tincidunt, Street");
+
+
+
+
+------------------Inserts Votos------------------  
+
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (1,"Partido Revolucionario Institucional",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (2,"Partido Acción Nacional",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (3,"Partido de la Revolución Democrática",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (4,"Partido Revolucionario Institucional",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (5,"Partido del Trabajo",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (6,"Partido Revolucionario Institucional",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (7,"Partido del Trabajo",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (8,"Partido de la Revolución Democrática",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (9,"Partido de la Revolución Democrática",10);
+INSERT INTO `Votos` (`ID_Mesa`,`Nombre_Partido`,`Numero_Votos`) VALUES (10,"Partido del Trabajo",10);
+
+
+
+------------------Inserts Votante------------------  
+
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("15971585K","Raja Q. Carver","01/08/1989","8","15971585K","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("110111738","Timon U. Macias","09/04/2001","7","110111738","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("448682463","Oleg N. Oliver","02/02/2002","5","448682463","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("344872430","Murphy G. Nieves","05/02/1998","7","344872430","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("231136193","Herman A. Jordan","26/04/1989","1","231136193","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("160450266","Uriah K. Tran","12/01/2014","4","160450266","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("374014161","Marsden N. Hall","30/10/1992","10","374014161","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("184350106","Brent I. Knapp","05/04/2009","6","184350106","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("279405374","Cassidy I. Norman","18/04/2006","7","279405374","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("502664247","Martena W. Mcgowan","27/06/1995","9","502664247","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("332909630","Stella X. Monroe","14/12/1988","8","332909630","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("169209995","Benjamin A. Benjamin","02/08/2000","8","169209995","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("405626500","Cadman A. Wells","20/12/2002","8","405626500","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("93484932","Clementine U. Kelley","30/11/2012","6","93484932","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("195349754","Fleur X. Medina","20/07/2016","7","195349754","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("397850544","Judith O. Norton","13/07/2004","6","397850544","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("303107207","Darryl H. Kinney","11/11/2006","3","303107207","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("332080814","Stacey B. Mccray","19/10/2013","9","332080814","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("65616637","Willow O. Atkins","25/06/2002","7","65616637","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("39732236K","Donovan L. Baldwin","07/12/2012","8","39732236K","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("230506183","Indigo X. Wilkins","06/10/1997","10","230506183","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("287933762","Anthony C. Patel","08/01/2005","2","287933762","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("397231224","Kimberly N. Clements","27/09/2001","1","397231224","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("118288300","Clarke M. Slater","28/06/2014","5","118288300","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("197045671","September Q. French","16/05/1991","9","197045671","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("439075783","Cheyenne E. Baxter","17/01/2016","2","439075783","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("78885815","Bevis C. Velez","27/09/1998","4","78885815","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("121211637","Dennis W. Ellis","05/08/1995","8","121211637","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("247749977","Blaze U. Warren","16/10/1998","10","247749977","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("375489570","Plato B. Holman","23/04/2008","3","375489570","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("99403039","Ralph K. Becker","23/05/2017","10","99403039","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("362555922","Marny W. Waters","14/03/1998","5","362555922","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("473989964","Amanda J. Estrada","03/05/1999","1","473989964","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("210877258","Miriam D. Doyle","02/02/2013","3","210877258","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("433808037","Teagan S. Frye","19/07/2011","7","433808037","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("95549845","Jermaine L. Le","27/02/2011","6","95549845","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("474162966","Vera O. Morris","20/11/2005","5","474162966","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("223467253","Jael J. Fox","31/03/2005","8","223467253","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("302508143","Ralph T. Cote","08/10/2006","10","302508143","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("313893804","Ira L. Howard","19/12/1991","5","313893804","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("183793640","Mia A. Black","24/03/1995","5","183793640","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("397900193","Velma S. Bass","03/07/2018","5","397900193","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("150079373","Keane W. Hoover","16/11/2008","7","150079373","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("32470633K","Melissa B. Dudley","10/07/2000","6","32470633K","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("350417508","Claire P. Camacho","10/01/2013","1","350417508","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("406906817","Garth C. Hopper","10/11/2011","7","406906817","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("401732985","Lucas C. Daniel","07/05/2009","10","401732985","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("32736992K","Jason M. Watkins","11/07/2018","4","32736992K","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("349649039","Kay Y. Dixon","29/03/1988","7","349649039","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("293712123","Demetria U. Pruitt","05/01/2008","7","293712123","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("195251193","Arsenio F. Hurst","02/12/2014","10","195251193","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("6462735K","Lee C. Browning","19/07/1997","9","6462735K","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("318939578","Fay U. Chambers","14/04/2009","9","318939578","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("224575793","Rhiannon K. Villarreal","15/08/1989","1","224575793","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("127629099","Germane S. Randall","21/08/2008","10","127629099","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("398422945","Shellie R. Jefferson","22/05/2010","10","398422945","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("355869164","Belle E. Livingston","22/04/2017","9","355869164","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("361477790","Aquila L. Dixon","18/07/2013","7","361477790","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("264939534","Lara I. Morrow","26/08/1989","6","264939534","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("381591719","Nash W. Ayers","12/04/2015","2","381591719","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("412388666","Coby M. Bonner","31/07/1995","4","412388666","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("295728167","Caldwell H. Burks","02/03/2005","6","295728167","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("232151676","Rama A. Hays","13/01/2009","2","232151676","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("42537219K","Macy R. Bernard","11/09/2001","10","42537219K","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("100661594","Lysandra Z. Mcleod","02/10/2001","4","100661594","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("270270808","Merrill N. Kirk","23/10/2011","6","270270808","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("369831887","Wynne U. Morris","16/02/2000","4","369831887","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("5607967K","Evelyn F. Rowland","15/02/2002","7","5607967K","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("495892468","Buckminster R. Heath","09/03/1995","9","495892468","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("59658646","Zahir B. Mccray","08/05/1999","4","59658646","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("436725655","Ulric T. Haynes","01/07/1992","1","436725655","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("103329817","September P. Sherman","13/02/2018","2","103329817","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("438124039","Lisandra H. Horton","31/08/2008","7","438124039","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("333913844","Urielle S. Tucker","28/09/2009","5","333913844","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("288428263","Nathaniel M. Fry","22/10/2016","6","288428263","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("338378092","Moana L. Vinson","02/03/1988","3","338378092","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("310898325","Andrew R. Cleveland","13/10/1996","1","310898325","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("459675256","Kiayada I. Yang","08/05/2000","1","459675256","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("377454197","Adam S. Silva","08/06/1997","3","377454197","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("23350467K","Hasad F. Wilcox","18/03/2014","1","23350467K","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("507258530","Keiko I. Vaughn","29/03/2001","7","507258530","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("296985880","Baxter E. Lee","09/08/2001","10","296985880","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("345382917","Cyrus O. Buchanan","03/11/2018","3","345382917","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("238953510","Maryam A. Hicks","05/02/1996","8","238953510","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("287445024","Silas H. Crawford","01/12/1993","6","287445024","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("371108262","Simon Y. Haney","15/03/2008","8","371108262","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("463957312","Mari K. Miles","29/12/1989","2","463957312","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("156810983","Quyn Q. Houston","13/02/2006","9","156810983","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("133020268","Jorden C. Dotson","21/01/2010","4","133020268","Extranjero");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("303664017","Gage E. Levine","25/11/2004","5","303664017","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("429752620","Marvin L. Saunders","31/08/2016","5","429752620","Presidente");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("162679376","Lila F. Cole","18/05/1994","4","162679376","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("99699620","April Z. Lindsey","01/08/2009","5","99699620","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("439444886","Justine N. Adams","17/05/2000","6","439444886","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("267219494","Hadley L. Jordan","06/05/2011","2","267219494","");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("413781094","Benjamin C. Pace","25/08/2011","4","413781094","Mexicano");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("172209572","Kiara E. Parks","15/10/2014","4","172209572","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("369202294","Barrett E. Graves","05/02/2011","3","369202294","Vocal");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("115447521","Aquila X. Waller","11/05/2010","2","115447521","Apoderado");
+INSERT INTO `Votante` (`INE_Pasaporte`,`Nombre`,`Fecha_de_Nacimiento`,`ID_Mesa`,`INE_Suplente`,`Tipo_Votante`) VALUES ("255579150","Xerxes A. Wooten","23/08/2018","8","255579150","Mexicano");
+
+
+
+
+
+
+
+
+
+
+
+

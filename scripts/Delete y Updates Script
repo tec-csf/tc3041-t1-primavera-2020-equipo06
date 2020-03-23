@@ -1,0 +1,23 @@
+
+
+------------------Updates------------------
+
+
+UPDATE `Votante` SET `INE_Pasaporte` = "494914441", `Nombre` = "Ignatius C. Frye", `Fecha_de_Nacimiento` = "25/12/2002", `ID_Mesa` = "3", `INE_Suplente` = "494914441", `Tipo_Votante` = "Vocal" WHERE `INE_pasaporte` = 15971585K;
+UPDATE `Votante` SET `INE_Pasaporte` = "342789730", `Nombre` = "Iris E. Hamilton", `Fecha_de_Nacimiento` = "15/11/1997", `ID_Mesa` = "8", `INE_Suplente` = "342789730", `Tipo_Votante` = "Presidente" WHERE `INE_pasaporte` = 110111738;
+UPDATE `Votante` SET `INE_Pasaporte` = "110946724", `Nombre` = "Brock O. Faulkner", `Fecha_de_Nacimiento` = "30/08/1989", `ID_Mesa` = "7", `INE_Suplente` = "110946724", `Tipo_Votante` = "Extranjero" WHERE `INE_pasaporte` = 448682463;
+UPDATE `Votante` SET `INE_Pasaporte` = "162350374", `Nombre` = "Adam D. Wright", `Fecha_de_Nacimiento` = "03/07/2017", `ID_Mesa` = "3", `INE_Suplente` = "162350374", `Tipo_Votante` = "" WHERE `inE_pasaporte` = 4;
+UPDATE `Votante` SET `INE_Pasaporte` = "70643324", `Nombre` = "Haviva G. Vazquez", `Fecha_de_Nacimiento` = "19/12/2002", `ID_Mesa` = "2", `INE_Suplente` = "70643324", `Tipo_Votante` = "Apoderado" WHERE `inE_pasaporte` = 344872430;
+
+
+
+
+
+
+------------------DELETES------------------
+
+DELETE FROM `Votante` WHERE Nombre = "Oleg N. Oliver";
+DELETE FROM `Votante` WHERE Nombre = "Uriah K. Tran";
+DELETE FROM `Votante` WHERE Nombre = "Cadman A. Wells";
+DELETE FROM `Votante` WHERE Nombre = "Judith O. Norton";
+DELETE FROM `Votante` WHERE Nombre = "Willow O. Atkins";
